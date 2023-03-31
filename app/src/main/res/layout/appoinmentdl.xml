@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/docimagetv2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/doctor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/docimagetv2"
+            >
+            <TextView
+                android:id="@+id/docNameTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="18dp"
+                android:textColor="#04A60C"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/docspecTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speciality"
+                android:textSize="18dp"
+                android:textColor="#7C1109"
+                android:padding="5dp"/>
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/docTimeTV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Time"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/docdegtv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+
+                    android:text="Degree"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/docTimeTV2"
+                    />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/confirm_button2"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/acbar"
+                android:text="Primary Request"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

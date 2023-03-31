@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project Health</string>
+    <string name="Cur_date">Cur_date</string>
+    <string name="hyperlinkforhighbp"><a href="https://www.mayoclinic.org/diseases-conditions/tachycardia/symptoms-causes/syc-20355127">high pulse</a></string>
+    <string name="hyperlinkforlowbp"><a href="https://www.mayoclinic.org/diseases-conditions/bradycardia/symptoms-causes/syc-20355474">Low pulse</a></string>
+
+
+    <string name="hyperlinkhp"><a href="https://www.cdc.gov/bloodpressure/about.htm#:~:text=High%20blood%20pressure%2C%20also%20called,blood%20pressure%20(or%20hypertension).">High Bp</a></string>
+    <string name="hyperlinklp"><a href="https://www.mayoclinic.org/diseases-conditions/low-blood-pressure/symptoms-causes/syc-20355465">Low Bp</a></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

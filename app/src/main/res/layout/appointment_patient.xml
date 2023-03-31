@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital name"
+            android:textSize="20dp"
+            android:id="@+id/hospitalnameView"/>
+        <TextView
+            android:background="#E1DCDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor's Name"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/hospitalnameView"
+            android:id="@+id/doctornameView"/>
+
+        <TextView
+            android:background="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status : "
+            android:textSize="20dp"
+            android:textColor="@color/acbar"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/doctornameView"
+            android:id="@+id/fao"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:background="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status : "
+            android:textSize="20dp"
+            android:textColor="@color/acbar"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/doctornameView"
+            android:layout_toEndOf="@+id/fao"
+            android:id="@+id/Status"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

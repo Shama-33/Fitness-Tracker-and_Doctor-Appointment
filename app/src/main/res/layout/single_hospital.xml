@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/hospital"
+            android:id="@+id/hosimagiv"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/hosimagiv"
+            >
+            <TextView
+                android:id="@+id/hosNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Name"
+                android:textSize="18dp"
+                android:textColor="#04A60C"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/hoslocTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location: 159A,Dhanmondi,Dhaka"
+                android:textSize="14dp"
+                android:textColor="#7C1109"
+                android:padding="5dp"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+                <TextView
+                    android:id="@+id/phonetv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:text="Phone number: "
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/phonenumtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:text="013342645 "
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/phonetv"
+                    />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextTV"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

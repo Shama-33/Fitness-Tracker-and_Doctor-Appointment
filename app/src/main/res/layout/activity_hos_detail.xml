@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HosDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/HosRL"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/acbar"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/hosnamepatTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/hosAddpatTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital Address"
+                android:textColor="@color/white"
+                android:paddingTop="2dp"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/hosnamepatTV"/>
+            <TextView
+                android:id="@+id/hosphonepatTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@color/white"
+                android:paddingTop="2dp"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/hosAddpatTV"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/callbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/whitephone"
+                    android:backgroundTint="@color/acbar"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HosRL"
+        android:id="@+id/Doctorspat">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:paddingLeft="10dp"
+            android:id="@+id/searchdoc"
+            android:layout_toStartOf="@+id/filterButtonp"
+            android:hint="Search"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/filterButtonp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:backgroundTint="@color/acbar"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Filter"
+            />
+
+        <TextView
+            android:id="@+id/weid"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="ALL"
+            android:textSize="20dp"
+            android:layout_below="@id/searchdoc"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/searchdoc"
+            android:layout_marginStart="102dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/weid"
+            android:text="Confirm Appointment"
+            android:id="@+id/ConfirmApp"
+            android:backgroundTint="#F60000"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weid"
+            android:id="@+id/scroool">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weid"
+            android:id="@+id/DocRvpat"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/single_doctor_patient_view"/>
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
